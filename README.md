@@ -14,6 +14,7 @@ Welcome to the Speed Typing Test Web Page project! This web page allows users to
 
 - [Chart.js](https://www.chartjs.org/): The project uses Chart.js to visualize typing statistics.
 - [PoetryDB](https://poetrydb.org/index.html): Public API to retrieve text data from
+- [Live Server VS Code](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): Local Server extension with live reload feature
 
 ## Usage
 
@@ -27,9 +28,11 @@ Welcome to the Speed Typing Test Web Page project! This web page allows users to
   ```bash
   npm install chart.js
   ```
-3. Open the index.html file in a web browser to start the speed typing test.
+3. Install Live Server Extension in VS Code or use another Local Server.
 
-4. After the timer expires, you will be automatically redirected to the results page (chart.html) to view your statistics.
+4. Open the index.html file with the server to start the speed typing test.
+
+5. After the timer expires, you will be automatically redirected to the results page (chart.html) to view your statistics.
 
 ## Project Structure
 
