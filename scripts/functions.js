@@ -25,7 +25,11 @@ const modifiers = [
     'Tab',
     'Enter',
     'CapsLock',
-    'Dead'
+    'Dead',
+    'AltGraph',
+    'NumLock',
+    'Delete',
+    'Insert'
 ]
 
 
