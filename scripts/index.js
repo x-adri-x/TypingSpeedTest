@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         if (key) {
-            if (key === 'Escape') {
+            if (key === 'Enter') {
                 restartTest()
             } else if (key === 'Backspace' && cursor.position === 0) {
                 return

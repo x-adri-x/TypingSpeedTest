@@ -53,7 +53,7 @@ export function createCursor() {
 // handles the keyboard input
 export function getInput(event) {
     const key = event.key
-    if (key === 'Enter') {
+    if (key === 'Escape') {
         event.preventDefault()
         location.reload()
     }
