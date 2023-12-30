@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Play:wght@400;700&family=Poppins:wght@100;200&family=Roboto+Mono:wght@200&display=swap"
+        rel="stylesheet">
+    <title>TypeHero | Speed Type Test</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="desktop.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/chart.js"></script>
+</head>
+
+<body>
+    <div class="block__main-container">
+        <header>
+            <h1>TypeHero</h1>
+            <h2>Words Per Minute, Sky's the Limit!</h2>
+            <button type="button" class="button button__back-home" id="button__back-home">Take another Test</button>
+        </header>
+        <div class="block__statistics-content">
+            <div class="block__statistics">
+                <div class="block__wpm">
+                    <p class="paragraph paragraph__statistic-name">WPM:</p>
+                    <p class="paragraph paragraph__statistic-value" id="paragraph__wpm-value"></p>
+                </div>
+                <div class="block__accuracy">
+                    <p class="paragraph paragraph__statistic-name">Accuracy:</p>
+                    <p class="paragraph paragraph__statistic-value" id="paragraph__accuracy-value"></p>
+                </div>
+            </div>
+            <dialog class="block__dialog" id="block__dialog">
+                <p class="paragraph__dialog-paragraph" id="paragraph__dialog-paragraph"></p>
+                <button class="button button__dialog-button" id="button__dialog-button">Go to main page.</button>
+            </dialog>
+            <div class="block__canvas">
+                <canvas class="block__chart" id="chart"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

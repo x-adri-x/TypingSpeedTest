@@ -1,0 +1,186 @@
+body {
+    background-color: #A9A9A9;
+    color: #454545;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    height: 30vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0px;
+}
+
+header h2 {
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+
+div:focus,
+span:focus,
+button:focus,
+dialog:focus {
+    outline: none;
+}
+
+dialog::backdrop {
+    background-color: rgb(182, 187, 196, 0.7);
+}
+
+.block__main-container {
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    background-color: #FECDA6;
+    border: none;
+    height: 40px;
+    color: #454545;
+    font-family: 'Play', sans-serif;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+.button__dialog-button {
+    display: none;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.block__canvas {
+    grid-area: chart;
+    display: flex;
+    justify-content: center;
+}
+
+.block__content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:
+        'timer instructions'
+        'text text';
+    padding: 0 30px;
+}
+
+.block__dialog {
+    background-color: #fecda6;
+    border: none;
+    padding: 0;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.block__statistics {
+    display: flex;
+    grid-area: statistics;
+    justify-content: space-around;
+}
+
+.block__statistics-content {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 92vw;
+    grid-template-areas:
+        'statistics'
+        'chart';
+    height: 60vh;
+}
+
+.block__text-container {
+    width: 75vw;
+    font-size: 1.7rem;
+    justify-self: center;
+    grid-area: text;
+    padding: 5vh 0;
+}
+
+.cursor {
+    border-right: 2px solid #FECDA6;
+    /* Customize the cursor style */
+    animation: cursorAnimation 1s infinite;
+}
+
+@keyframes cursorAnimation {
+    50% {
+        opacity: 0;
+    }
+}
+
+.paragraph {
+    display: flex;
+}
+
+.paragraph__dialog-paragraph {
+    padding: 20px;
+}
+
+.paragraph__hidden-instructions {
+    justify-self: flex-start;
+    display: none;
+    grid-area: instructions;
+    padding-left: 5vh;
+}
+
+.paragraph__statistic-name {
+    margin: 30px 0px 0px 30px;
+}
+
+.paragraph__statistic-value {
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 0;
+    color: #FECDA6;
+    font-weight: 700;
+}
+
+.paragraph__start {
+    grid-area: instructions;
+    padding-left: 5vh;
+}
+
+.paragraph__timer {
+    font-size: 2.5rem;
+    margin: 0px;
+    grid-area: timer;
+}
+
+.span--color-green {
+    color: #AFC8AD;
+}
+
+.span--color-red {
+    color: #EF4040;
+}
+
+.span--color-default {
+    color: #454545;
+}
+
+.span--color-highlight {
+    color: rgb(69, 69, 69, 0.2);
+}
+
+.span--color-white {
+    color: #FFFFFF;
+}
+
+.span--decoration-linethrouhg {
+    text-decoration: line-through;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Play:wght@400;700&family=Poppins:wght@100;200&family=Roboto+Mono:wght@200&display=swap"
+        rel="stylesheet">
+    <title>TypeHero | Speed Type Test</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="desktop.css">
+    <script type="module" src="/scripts/index.js" defer></script>
+</head>
+
+<body>
+    <div class="block__main-container">
+        <header>
+            <h1>TypeHero</h1>
+            <h2>Words Per Minute, Sky's the Limit!</h2>
+            <button type="button" class="button button__progress" id="button__progress">See my progress</button>
+        </header>
+        <div class="block__content">
+            <p class="paragraph__timer" id="paragraph__timer"></p>
+            <p class="paragraph__start" id="paragraph__start">Start Typing!</p>
+            <p class="paragraph__hidden-instructions" id="paragraph__hidden-instructions">Hit 'Enter' to start a new or
+                'Esc' to
+                restart current
+                test</p>
+            <div class="block__text-container" id="block__text-container"></div>
+        </div>
+    </div>
+</body>
+
+</html>
