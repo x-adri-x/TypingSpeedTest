@@ -67,12 +67,7 @@ export function getInput(event) {
 // handles case where Backspace was pressed and the input
 // contains extra characters, e.g instead of 'cat'
 // 'catdog' was typed
-export function handleBackspaceWithOverflow(
-  cursor,
-  letters,
-  container,
-  counters
-) {
+export function handleBackspaceWithOverflow(cursor, counters) {
   cursor.element.previousSibling.remove()
   counters.input = counters.input.slice(0, -1)
   cursor.position = cursor.position - 1
