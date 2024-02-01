@@ -20,6 +20,7 @@ import Counters from "./classes/counters.js"
 // variables for the localStorage keys
 // fix data running out, grab at least 160 words
 // format the time with dateTime functions
+// don't mutate the original words array with shuffle
 
 document.addEventListener("DOMContentLoaded", async () => {
   // target document elements
